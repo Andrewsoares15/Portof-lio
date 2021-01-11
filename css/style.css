@@ -58,6 +58,27 @@ img{
     margin-left: 20px;
     padding: 5px 10px;
 }
+@media (max-width: 400px){
+    .container{
+        flex-direction: column;
+        max-width: 300px;
+    }
+    .header{
+        position: relative;
+        max-width: 100%;
+
+    }
+    .header-nome a{
+        margin: 0 0;
+    }
+    .header-lista{
+        padding: 0px;
+    }
+    .header-lista a{
+       margin: 0;
+       padding: 0px;
+}
+}
 @media (max-width: 739px){
     .header{
         position: relative;
@@ -108,7 +129,8 @@ img{
     flex: 1;
     margin: 20px 10px 0 10px;
 }
-@media(max-width: 739px){
+
+@media (max-width: 739px){
     .main-info{
         margin: 20px 10px 0 10px;;
     }
@@ -121,6 +143,7 @@ img{
         margin: 40px 10px 0 10px;
     }
 }
+
 /* Sobre*/
 .sobre{
     margin-top: 150px;
@@ -161,6 +184,12 @@ img{
     color: white;
     background-color: #407bff;
 }
+@media (max-width: 400px){
+    .sobre-img img{
+        padding-bottom: 15px;
+        margin: -180px auto 0 auto;
+    }
+}
 @media (max-width: 739px){
     .sobre-img{
         padding: 0;
@@ -188,6 +217,7 @@ img{
 }
 .projetos1{
     margin-top: -20px;
+    
 }
 .projetos p, .projetos1 p{
     text-align: center;
@@ -200,6 +230,13 @@ img{
     flex: 1;
     background: #407bff;
     margin: 0 10px;
+}
+@media (max-width: 400px){
+
+    .projetos1{
+        float: right;
+        margin-top: -325px;
+    }
 }
 @media (max-width: 739px){
     .projetos{
@@ -224,7 +261,7 @@ img{
 .estudo-img{
     background: #fff;
     flex: 1;
-    margin: 0 10px;
+    margin: 20px 10px;
 }
 .estudo-img h3{
     text-align: center;
