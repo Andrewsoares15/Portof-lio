@@ -19,6 +19,9 @@ body{
     margin: 0 auto;
     display: flex;
 }
+@media (max-width: 739px){
+    
+}
 img{
     display: block;
     max-width: 100%;
@@ -30,6 +33,7 @@ img{
     position: fixed;
     z-index: 10;
 }
+
 .header-nome a{
     display: block;
     color: #fff;
@@ -54,6 +58,22 @@ img{
     margin-left: 20px;
     padding: 5px 10px;
 }
+@media (max-width: 739px){
+    .header{
+        position: relative;
+    }
+    .header-nome a{
+        margin: 0px;
+    }
+    .header-lista{
+        padding: 0px;
+    }
+    .header-lista a{
+       margin-left: 15px;
+       padding: 5px;
+}
+}
+
 /* Main*/
 .main{
     position: relative;
@@ -87,6 +107,19 @@ img{
     position: relative;
     flex: 1;
     margin: 20px 10px 0 10px;
+}
+@media(max-width: 739px){
+    .main-info{
+        margin: 20px 10px 0 10px;;
+    }
+    .main{
+        top: 30px;
+    }
+    .main-img{
+        position: relative;
+        flex: 1;
+        margin: 40px 10px 0 10px;
+    }
 }
 /* Sobre*/
 .sobre{
@@ -128,6 +161,17 @@ img{
     color: white;
     background-color: #407bff;
 }
+@media (max-width: 739px){
+    .sobre-img{
+        padding: 0;
+        margin: 0;
+        margin-top: 210px;
+    }
+    .sobre{
+        margin-top: 80px;
+        padding: 20px;
+    }
+}
 /*Projetos */
 .projetos{
     padding: 40px 0;
@@ -157,22 +201,25 @@ img{
     background: #407bff;
     margin: 0 10px;
 }
-/*Estudos 
-.estudo-img{
-    margin-left: 130px;
-    margin-right: 20px;
+@media (max-width: 739px){
+    .projetos{
+        margin-top: -20px;
+    }
 }
+/*Estudos 
 */
 .estudo{
     margin-top: 60px;
-    padding: 0 250px 60px 250px;
+    padding: 0 250px 80px 250px;
     background: #407bff;
 }
 .estudo h2{
+    color: #fff;
     padding: 30px;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .estudo-img{
     background: #fff;
@@ -183,18 +230,55 @@ img{
     text-align: center;
     margin-bottom: 20px;
 }
+@media (min-width: 740px) and (max-width: 1130px){
+    .estudo{
+        padding: 0 80px 80px 80px;
+    }
+}
+@media (max-width: 739px){
+    .estudo{
+        margin-top: 40px;
+        padding: 0 0px 80px 0px;
+    }
+}
 /*Footer */
 .footer {
     margin-top: 60px;
     background: #90CAF9;
+    padding-bottom: 20px;
+}
+.footer h2{
+    text-align: center;
+    padding: 25px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .footer-info p{
     text-align: center;
     margin: 0 auto;
-}
-.footer-info span{
-    
+    font-size: 1.125em;
 }
 hr{
-    width: 1200px;
+    width: 810px;
+}
+.footer-autor{
+    padding-top: 5px;
+}
+.footer-lista ul{
+    padding-top: 10px;
+    width: 145px;
+    display: flex;
+    margin: 0 auto;
+}
+.footer-lista img{
+    margin: 0 10px;
+}
+@media (max-width: 739px){
+    hr{
+        width: 100%;
+    }
+    .footer{
+        margin-top: 40px;
+    }
 }
