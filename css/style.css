@@ -215,9 +215,6 @@ img{
     text-align: center;
     color: #fff;
 }
-.projetos1{
-
-}
 .projetos p, .projetos1 p{
     text-align: center;
     color: #fff;
@@ -234,12 +231,16 @@ img{
     .projetos{
         padding: 40px 0 0px 0;
     }
+    .projetos-sobre h2{
+        font-size: 0.875em;
+        height: 70px;
+    }
     .projetos-sobre{
         margin-bottom: 20px;
     }
     .projetos1{
         float: right;
-        margin-top: -342px;
+        margin-top: -325px;
         margin-right: 20px;
     }
 }
